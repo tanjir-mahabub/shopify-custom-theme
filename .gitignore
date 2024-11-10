@@ -41,34 +41,40 @@ public/
 *~
 
 # Keep empty folders in version control by using .gitkeep only when folder is empty
-# If a folder contains files, those should be tracked
+# Track .liquid and .json files in each folder
 
-# Assets folder (track .liquid files or other assets if present)
+# Assets folder
 assets/*
 !assets/.gitkeep
 !assets/*.liquid
+!assets/*.json
 
 # Config folder
 config/*
 !config/.gitkeep
 !config/*.liquid
+!config/*.json
 
 # Locales folder
 locales/*
 !locales/.gitkeep
 !locales/*.liquid
+!locales/*.json
 
 # Sections folder
 sections/*
 !sections/.gitkeep
 !sections/*.liquid
+!sections/*.json
 
 # Snippets folder
 snippets/*
 !snippets/.gitkeep
 !snippets/*.liquid
+!snippets/*.json
 
 # Templates folder
 templates/*
 !templates/.gitkeep
 !templates/*.liquid
+!templates/*.json
