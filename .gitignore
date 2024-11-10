@@ -40,29 +40,35 @@ public/
 *.bak
 *~
 
-# Keep empty folders in version control by using .gitkeep
-# Add .gitkeep exceptions to track empty folders
+# Keep empty folders in version control by using .gitkeep only when folder is empty
+# If a folder contains files, those should be tracked
 
-# Assets folder
+# Assets folder (track .liquid files or other assets if present)
 assets/*
 !assets/.gitkeep
+!assets/*.liquid
 
 # Config folder
 config/*
 !config/.gitkeep
+!config/*.liquid
 
 # Locales folder
 locales/*
 !locales/.gitkeep
+!locales/*.liquid
 
 # Sections folder
 sections/*
 !sections/.gitkeep
+!sections/*.liquid
 
 # Snippets folder
 snippets/*
 !snippets/.gitkeep
+!snippets/*.liquid
 
 # Templates folder
 templates/*
 !templates/.gitkeep
+!templates/*.liquid
