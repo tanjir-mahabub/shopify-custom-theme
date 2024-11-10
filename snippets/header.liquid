@@ -1,0 +1,12 @@
+
+<header>
+    <h1>{{ shop.name }}</h1>
+    
+<img src={{ 'header-logo.png' | asset_url }} alt="logo" />
+
+    <ul>
+        {%- for link in linklists.main-menu.links -%}
+        {{ link.title |  link_to: link.url }}
+        {%- endfor -%}
+    </ul>
+</header>

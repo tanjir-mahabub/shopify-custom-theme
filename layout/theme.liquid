@@ -3,11 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopify New Theme</title>
+    <title>{{ shop.name }} | {{ shop.description }}</title>
+    <meta name="description" content="{{ shop.description }}">
 
     {{ content_for_header }}
+
+    {{ 'style.css' | asset_url |  stylesheet_tag }}
 </head>
 <body>
+    {%  render 'header' %}
+    
     {{ content_for_layout }}
+
+    {% render 'footer' %}
+
+    {{ 'script.js' |  asset_url |  script_tag }}
 </body>
 </html>

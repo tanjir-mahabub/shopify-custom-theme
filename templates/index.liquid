@@ -1,1 +1,9 @@
-<h1>Hello, Md Tanjir Mahabub</h1>
+{% for product in collections['Matt'].products %}
+<div>
+    <a href="{{ product.url }}">
+        <img src="{{ product.featured_image |  image_url: width: "200px" }}" />
+    <h3>{{ product.title }}</h3>
+    <p>{{ product.price |  money_with_currency }}</p>
+    </a>
+</div>    
+{% endfor %}
